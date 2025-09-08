@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #87ceeb;
+  transition: background 1s ease-in-out;
+}
+
+.app {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  width: 350px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.search {
+  margin-bottom: 15px;
+}
+
+input {
+  padding: 10px;
+  width: 60%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #4facfe;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #00c6ff;
+}
+
+#weatherResult {
+  margin: 20px 0;
+}
+
+/* ✅ Forecast Section */
+#forecast {
+  display: flex;
+  overflow-x: auto;     /* ✅ allows horizontal scroll */
+  gap: 10px;
+  margin-top: 20px;
+  padding-bottom: 10px; /* space for scroll bar */
+  scroll-behavior: smooth;
+}
+
+.forecast-day {
+  flex: 0 0 100px;       /* ✅ fixed card width */
+  background: #f0f0f0;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
